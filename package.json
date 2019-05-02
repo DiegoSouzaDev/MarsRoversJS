@@ -1,0 +1,15 @@
+{
+  "name": "robots",
+  "version": "1.0.0",
+  "description": "Mars hovers",
+  "main": "startup.js",
+  "scripts": {
+    "start": "node app/startup.js",
+    "test": "jest"
+  },
+  "author": "dsouza",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "24.7.1"
+  }
+}
