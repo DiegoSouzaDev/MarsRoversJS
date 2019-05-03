@@ -58,8 +58,10 @@ class RoverService {
             try {
                 const validDirection = "NEWS";
                 const coordPieces = await this.reader.splitLine(inputCoord);
-                const posX = coordPieces[0];
-                const posY = coordPieces[1];
+
+                const posX = coordPieces[0]*1;
+                const posY = coordPieces[1]*1;
+
                 const direction = coordPieces[2].toUpperCase();
 
                 if (posX > terrain.maxPositionX || posY > terrain.maxPositionY) {
