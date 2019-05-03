@@ -1,4 +1,3 @@
-const assert = require('assert');
 const expect = require('chai').expect;
 
 const MovementService = require('../app/service/MovementService');
