@@ -64,12 +64,13 @@ class RoverService {
 
                 const direction = coordPieces[2].toUpperCase();
 
-                if (posX > terrain.maxPositionX || posY > terrain.maxPositionY) {
+                if (posX > terrain.maxPositionX || posY > terrain.maxPositionY || posX < 0 || posY < 0) {
                     return reject(`\nInvalid landing coordinate. valid range: X:${terrain.maxPositionX} | Y:${terrain.maxPositionY}`);
+                     
                 }
-
                 if (direction == "" || !validDirection.includes(direction)) {
                     return reject("\nInvalid rover direction, try again from the beginning\n");
+                    
                 }
 
                 coordPieces[2] = direction;
@@ -77,6 +78,7 @@ class RoverService {
 
             } catch (err) {
                 return reject(err);
+                
             }
         });
     };
