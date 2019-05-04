@@ -32,10 +32,6 @@ class Reader {
         });
     }
 
-    close() {
-        this.lineReader.close();
-    }
-
 }
 
 module.exports = Reader; 
