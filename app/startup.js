@@ -85,6 +85,7 @@ let nextAction = () => {
 
     }).catch(err => {
         console.log(err);
+        nextAction();
     })
 }
 
