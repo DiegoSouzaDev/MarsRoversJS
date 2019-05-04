@@ -18,16 +18,16 @@ In order to control a rover, NASA sends a simple string of letters containing a 
 -- Input 2: Navigation instructions for the named rover. i.e a string containing ('L', 'R', 'M').
 
 ### IMPLEMENTATION
-The implementation was made looking for a easy way to lead the user throght the application, so it was separated user steps:
-* First step is to inform the terrain size, usin a pair of numbers separated by space (ex: `12 8` will generate a terrain with `12x8`).
-* Next step is to inform how many rover are going to be sent. This will provide a list with nomerated and named rovers.
+The implementation was made looking for a easy way to lead the user throught the application, so it was separated by user steps:
+* First step is to inform the terrain size, using a pair of numbers separated by space (ex: `12 8` will generate a terrain with `12x8`).
+* Next step is to inform how many rover are going to be sent. This will provide a list with numerated and named rovers.
 * Next step is to inform, one by one, the landing coordinates and the direction for each rover (ex: `1, 8, N`).
 * Doing that, the user will face a small menu, where 3 options are available: 
 `1 - Move a rover`, `View rovers location` and `Exit application`.
 * By choosing `1 - Move a rover`:
     * The user will be asked the whitch rover is wanted to be moved.
     * The movement instructions (ex: `RMMLMR`).
-    * The application then provide a feedback message informing if the rover was moved successfuly or lead the user to try again.
+    * The application then provide a feedback message informing if the rover was moved successfully or if it has an error.
     * The user will be sent back to the menu to choose his next action.
 * By choosing `View rovers location`:
     * A Message will be printed to show to the users the information about all the rovers sent to Mars.
