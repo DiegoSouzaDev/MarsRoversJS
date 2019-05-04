@@ -27,7 +27,7 @@ The implementation was made looking for a easy way to lead the user throght the 
 * By choosing `1 - Move a rover`:
     * The user will be asked the whitch rover is wanted to be moved.
     * The movement instructions (ex: `RMMLMR`).
-    * The application then provide a feedback message informing if the rover was moved successfuly or lead the user to try again.
+    * The application then provide a feedback message informing if the rover was moved successfuly or had an error.
     * The user will be sent back to the menu to choose his next action.
 * By choosing `View rovers location`:
     * A Message will be printed to show to the users the information about all the rovers sent to Mars.
